@@ -1,0 +1,107 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  transition: all 0.1s ease-in;
+  font-family: "Trebuchet MS";
+}
+body {
+  background-color: #3b3f45;
+}
+.header {
+  background-color: #4a4f56;
+}
+.header .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header h1 {
+  font-weight: 700;
+  font-size: 24px;
+  align-items: center;
+  color: #ff8984;
+  padding-top: 19px;
+  margin-bottom: 4px;
+}
+h1 + h4 {
+  font-weight: 400;
+  font-size: 16px;
+  align-items: center;
+  color: #ff8984;
+  margin-bottom: 12px;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 45px;
+  padding-right: 130px;
+  padding-left: 129px;
+}
+.list ul {
+  list-style: none;
+  font-weight: 400;
+  font-size: 18px;
+  color: #ffffff;
+  background-color: #88839e;
+}
+.list ul li:nth-child(even) {
+  background-color: #7a7593;
+}
+.list li {
+  width: 534px;
+  height: 45px;
+}
+.list ul label {
+  display: block;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+}
+.list label small {
+  font-size: 11px;
+  color: #ffffff;
+  align-items: center;
+}
+.list label small::before {
+  content: "(";
+}
+.list label small::after {
+  content: ")";
+}
+.list ul li:hover {
+  background-color: #625e77;
+  border-top: 3px solid #ffffff;
+  border-bottom: 3px solid #ffffff;
+}
+.list ul li:active {
+  background-color: coral;
+}
+input[type="checkbox"]:checked + span,
+input[type="checkbox"]:checked + span small {
+  text-decoration: line-through;
+  color: #9b96ac;
+}
+footer .container {
+  width: 534px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4a4f56;
+}
+footer h4 {
+  font-weight: 400;
+  font-size: 18px;
+  color: #ff8984;
+}
+
+@font-face {
+  font-family: "Trebuchet MS" Trebuchet, Arial, sans-serif;
+  src: url("../fonts/trebuchetms.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}

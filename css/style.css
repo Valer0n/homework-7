@@ -85,6 +85,9 @@ input[type="checkbox"]:checked + span small {
   text-decoration: line-through;
   color: #9b96ac;
 }
+.footer {
+  padding-bottom: 45px;
+}
 footer .container {
   width: 534px;
   height: 45px;
@@ -97,6 +100,9 @@ footer h4 {
   font-weight: 400;
   font-size: 18px;
   color: #ff8984;
+}
+footer h4::after {
+  content: " :)";
 }
 
 @font-face {

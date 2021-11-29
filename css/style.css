@@ -47,7 +47,6 @@ main {
 }
 .list li {
   width: 534px;
-  height: 45px;
   list-style: none;
   font-weight: 400;
   font-size: 18px;
@@ -100,21 +99,21 @@ input[type="checkbox"]:checked + span small {
   text-decoration: line-through;
   color: #9b96ac;
 }
-.bon-appetit .container {
-  width: 534px;
-  height: 45px;
-  background-color: #4a4f56;
+.container h4 {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
 }
-.bon-appetit h4 {
+h4 {
+  width: 534px;
+  height: 45px;
   font-weight: 400;
   font-size: 18px;
   color: #ff8984;
+  background-color: #4a4f56;
 }
-.bon-appetit h4::after {
+h4::after {
   content: " :)";
 }
 

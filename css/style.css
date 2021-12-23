@@ -1,17 +1,24 @@
+@font-face {
+  font-family: "Trebuchet MS" Trebuchet, Arial, sans-serif;
+  src: url("../fonts/trebuchetms.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   line-height: 1;
   transition: all 0.1s ease-in;
-  font-family: "Trebuchet MS";
 }
+
 body {
+  font-family: "Trebuchet MS";
   background-color: #3b3f45;
 }
+
 .header {
   background-color: #4a4f56;
-
   padding-bottom: 12px;
 }
 .header .container {
@@ -28,84 +35,81 @@ body {
   margin-top: 19px;
   margin-bottom: 4px;
 }
-h1 + h4 {
+.header h1 + h4 {
   font-weight: 400;
   font-size: 16px;
   align-items: center;
   color: #ff8984;
 }
+
 main {
   padding-top: 20px;
   padding-bottom: 45px;
 }
-.list .container {
+main .list .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-bottom: 45px;
 }
-.list li {
+main .list ul {
+  margin-bottom: 45px;
+}
+main .list ul li {
   width: 534px;
   list-style: none;
   font-weight: 400;
   font-size: 18px;
-  color: #ffffff;
+  color: #fff;
   background-color: #88839e;
   border-top: 3px solid #88839e;
   border-bottom: 3px solid #88839e;
 }
-.list ul li:nth-child(2n) {
+main .list ul li:hover {
+  background-color: #625e77;
+  border-top: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+}
+main .list ul li:active {
+  background-color: #ff8984;
+}
+main .list ul li:nth-child(2n) {
   background-color: #7a7593;
   border-top: 3px solid #7a7593;
   border-bottom: 3px solid #7a7593;
 }
-.list ul label {
+main .list ul li label {
   display: block;
   cursor: pointer;
   height: 100%;
   padding: 11px 0px 12px 14px;
 }
-.list li span {
-  vertical-align: 3px;
-}
-.list label small {
-  font-size: 11px;
-  color: #ffffff;
-  align-items: center;
-}
-input {
+main .list ul li label input {
   width: 19px;
   height: 19px;
   margin-right: 16px;
 }
-
-.list label small::before {
+main .list ul li label span {
+  vertical-align: 3px;
+}
+main .list ul li label span small {
+  vertical-align: 3px;
+  font-size: 11px;
+  color: #fff;
+  align-items: center;
+}
+main .list ul li label span small::before {
   content: "(";
 }
-.list label small::after {
+main .list ul li label span small::after {
   content: ")";
 }
-.list ul li:hover {
-  background-color: #625e77;
-  border-top: 3px solid #ffffff;
-  border-bottom: 3px solid #ffffff;
-}
-.list ul li:active {
-  background-color: coral;
-}
-input[type="checkbox"]:checked + span,
-input[type="checkbox"]:checked + span small {
-  text-decoration: line-through;
-  color: #9b96ac;
-}
-.container h4 {
+main .list h4 {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-}
-h4 {
   width: 534px;
   height: 45px;
   font-weight: 400;
@@ -113,13 +117,14 @@ h4 {
   color: #ff8984;
   background-color: #4a4f56;
 }
-h4::after {
+main .list h4::after {
   content: " :)";
 }
 
-@font-face {
-  font-family: "Trebuchet MS" Trebuchet, Arial, sans-serif;
-  src: url("../fonts/trebuchetms.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
+input[type=checkbox]:checked + span,
+input[type=checkbox]:checked + span small {
+  text-decoration: line-through;
+  color: #9b96ac;
 }
+
+/*# sourceMappingURL=style.css.map */

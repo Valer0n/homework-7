@@ -1,0 +1,138 @@
+@font-face {
+    font-family: "Trebuchet MS" Trebuchet, Arial, sans-serif;
+    src: url("../fonts/trebuchetms.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+$color-white: #fff;
+$color-coral: #ff8984;
+$color-light-gray: #4a4f56;
+$color-dark-gray: #3b3f45;
+$color-violet: #625e77;
+$color-light-violet: #88839e;
+$color-dark-violet: #7a7593;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1;
+    transition: all 0.1s ease-in;
+}
+
+body {
+    font-family: "Trebuchet MS";
+    background-color: $color-dark-gray;
+}
+
+.header {
+    background-color: $color-light-gray;
+    padding-bottom: 12px;
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    h1 {
+        font-weight: 700;
+        font-size: 24px;
+        align-items: center;
+        color: $color-coral;
+        margin-top: 19px;
+        margin-bottom: 4px;
+    }
+    h1+h4 {
+        font-weight: 400;
+        font-size: 16px;
+        align-items: center;
+        color: $color-coral;
+    }
+}
+
+main {
+    padding-top: 20px;
+    padding-bottom: 45px;
+    .list {
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 45px;
+        }
+        ul {
+            margin-bottom: 45px;
+            li {
+                width: 534px;
+                list-style: none;
+                font-weight: 400;
+                font-size: 18px;
+                color: $color-white;
+                background-color: $color-light-violet;
+                border-top: 3px solid $color-light-violet;
+                border-bottom: 3px solid $color-light-violet;
+                &:hover {
+                    background-color: $color-violet;
+                    border-top: 3px solid $color-white;
+                    border-bottom: 3px solid $color-white;
+                }
+                &:active {
+                    background-color: $color-coral;
+                }
+                &:nth-child(2n) {
+                    background-color: $color-dark-violet;
+                    border-top: 3px solid $color-dark-violet;
+                    border-bottom: 3px solid $color-dark-violet;
+                }
+                label {
+                    display: block;
+                    cursor: pointer;
+                    height: 100%;
+                    padding: 11px 0px 12px 14px;
+                    input {
+                        width: 19px;
+                        height: 19px;
+                        margin-right: 16px;
+                    }
+                    span {
+                        vertical-align: 3px;
+                        small {
+                            vertical-align: 3px;
+                            font-size: 11px;
+                            color: $color-white;
+                            align-items: center;
+                            &::before {
+                                content: "(";
+                            }
+                            &::after {
+                                content: ")";
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        h4 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            width: 534px;
+            height: 45px;
+            font-weight: 400;
+            font-size: 18px;
+            color: $color-coral;
+            background-color: $color-light-gray;
+            &::after {
+                content: " :)";
+            }
+        }
+    }
+}
+
+input[type="checkbox"]:checked+span,
+input[type="checkbox"]:checked+span small {
+    text-decoration: line-through;
+    color: #9b96ac;
+}
